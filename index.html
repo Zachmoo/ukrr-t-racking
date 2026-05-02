@@ -1,20 +1,165 @@
-<p><b>Status:</b> In Transit – Ocean Crossing Phase</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>UK Road Runner Tracking</title>
 
-<p><b>Current Location:</b> Eastern North Atlantic Ocean (west of Portugal)</p>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #eef2f7, #dfe6e9);
+}
 
-<p>
-<a href="https://maps.google.com/?q=36.5,-11.5" target="_blank">
-View Current Ship Location
-</a>
-</p>
+/* Header */
+.header {
+  background: #0a3d62;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
 
-<h3>Shipment Message</h3>
-<p>
-Your vehicle is currently in transit following departure from the Port of Southampton.
-The vessel is proceeding through the North Atlantic phase of the journey.
-Due to the extended shipping schedule and routing stops, transit time is expected to span approximately 60 days.
-All operations remain on course, and no delays have been reported.
-</p>
+/* Container */
+.container {
+  max-width: 750px;
+  margin: 40px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
 
-<p><b>Estimated Transit Time:</b> 60 Days</p>
-<p><b>Last Updated:</b> At Sea</p>
+/* Status */
+.status {
+  background: #e8f5e9;
+  border-left: 5px solid #2ecc71;
+  padding: 12px;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+/* Sections */
+h3 {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+/* Progress bar */
+.progress-container {
+  background: #ecf0f1;
+  border-radius: 20px;
+  position: relative;
+  height: 30px;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+/* Progress fill */
+.progress {
+  height: 100%;
+  width: 25%; /* adjust this as journey progresses */
+  background: linear-gradient(to right, #3498db, #2ecc71);
+  border-radius: 20px;
+  position: relative;
+}
+
+/* Moving ship */
+.ship {
+  position: absolute;
+  top: -10px;
+  left: 25%;
+  transform: translateX(-50%);
+  font-size: 28px;
+}
+
+/* Timeline */
+.timeline {
+  list-style: none;
+  padding: 0;
+}
+.timeline li {
+  padding: 6px 0;
+}
+
+/* Link */
+a {
+  color: #2980b9;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  margin-top: 20px;
+  font-size: 12px;
+  color: gray;
+  text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  UK ROAD RUNNER LOGISTICS
+</div>
+
+<div class="container">
+
+  <p><b>Tracking Number:</b> UKRR-VEH-739215-SOU</p>
+
+  <div class="status">
+    Status: In Transit – Ocean Crossing Phase
+  </div>
+
+  <h3>Shipment Progress</h3>
+
+  <div class="progress-container">
+    <div class="progress"></div>
+    <div class="ship">🚢</div>
+  </div>
+
+  <h3>Shipment Details</h3>
+  <p><b>From:</b> Port of Southampton, UK</p>
+  <p><b>To:</b> Mombasa, Kenya</p>
+
+  <h3>Current Location</h3>
+  <p>Eastern North Atlantic Ocean (west of Portugal)</p>
+
+  <p>
+    <a href="https://maps.google.com/?q=36.5,-11.5" target="_blank">
+      View Current Ship Location
+    </a>
+  </p>
+
+  <h3>Shipment Timeline</h3>
+  <ul class="timeline">
+    <li>✔ Received at Port</li>
+    <li>✔ Customs Cleared</li>
+    <li>✔ Loaded onto Vessel</li>
+    <li>⏳ Ocean Transit</li>
+    <li>⏳ Arrival at Mombasa</li>
+  </ul>
+
+  <h3>Shipment Message</h3>
+  <p>
+    Your vehicle is currently in transit following departure from the Port of Southampton.
+    The vessel is proceeding steadily through the North Atlantic phase.
+    All operations remain on schedule with no reported delays.
+  </p>
+
+  <p><b>Estimated Transit Time:</b> 60 Days</p>
+
+  <div class="footer">
+    Last Updated: At Sea
+  </div>
+
+</div>
+
+</body>
+</html>
